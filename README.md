@@ -1,2 +1,2 @@
 # vbgo
-My fully custom-coded site [which I will make... eventually.]
+My fully custom-coded site for professional-ish stuff [which I will make... eventually.]
