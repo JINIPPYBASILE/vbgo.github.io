@@ -557,25 +557,25 @@ img {
 .annoying-ahh-text {
   color:#fff;
   animation-name: freakyletters;
-  animation-duration: 8s;
+  animation-duration: 7s;
   animation-iteration-count:infinite;
 
 }
 
 
 @keyframes freakyletters {
-    0% {font-family:webdings;transform:translateX(6), translateX(10);font-weight:200;text-decoration:line-through; color: #d5d5d5;text-shadow:0px 0px 10px #000000,7px 2px 0px #000 }
+    0% {font-family:webdings;transform:translateX(6), translateX(10);font-weight:200;text-decoration:line-through;text-shadow:0px 0px 10px #000000,7px 2px 0px #000 }
     1.5% { font-family:webdings;transform:translateX(-10), translateX(1);font-weight:900;font-style:italics;text-shadow: -0.07em 0 0 #565656, -0.025em -0.04em 0 #a8a8a8,
-      -0.07em -0.025em 0 #010057 ;text-shadow: 0.05em 0.035em 0 #565656, 0.03em 0 0 #a8a8a8,
+      -0.07em -0.025em 0 #010057, 0.05em 0.035em 0 #565656, 0.03em 0 0 #a8a8a8,
       0 -0.04em 0 #e4e5ff}
     3% { font-family:wingdings;font-weight:200; text-shadow: 0.05em 0.035em 0 #565656, 0.03em 0 0 #a8a8a8,
-      0 -0.04em 0 #e4e5ff;color:#d2d2d2 }
+      0 -0.04em 0 #e4e5ff; }
     4.5% {font-family:wingdings;font-weight:700; text-decoration:line-through; text-shadow:0px 0px 10px #000000,7px 2px 0px #000  }
-    6% { font-family:symbols; font-weight:700;text-decoration:underline; color:#d7d7d7; }
+    6% { font-family:symbols; font-weight:700;text-decoration:underline; }
     7.5% { font-family:courier new;font-weight:700;text-decoration:none;}
-    8% { font-family:inconsolata;font-weight:400;color:#fff ;}
-    10% { font-family:inconsolata;font-weight:600;color:#fff ;}
-    20% { font-family:inconsolata;font-weight:900; }
+    8% { font-family:inconsolata;font-weight:200;color:#fff ;}
+    10% { font-family:inconsolata;color:#fff ;}
+    15% { font-family:inconsolata;font-weight:800; }
     25% { transform: rotate(1deg); }
     30% {font-family:inconsolata;font-weight:900;}
    50% {transform: rotate(-1deg); }
