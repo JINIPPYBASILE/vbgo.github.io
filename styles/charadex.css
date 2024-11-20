@@ -51,7 +51,7 @@ body {
   /* ============================================================= */
   /* Navbar
   ================================================================ */
-  --cd-navbar-background-color:          #000000;
+  --cd-navbar-background-color:          #172731;
   --cd-navbar-brand-color:               var(--cd-primary-color);
   --cd-navbar-brand-color-hover:         var(--cd-secondary-color);
   --cd-navbar-text-color:                var(--cd-content-background-color);
@@ -528,7 +528,26 @@ img {
   transition:transform 1.5s ease;
 }
 .annoying-ahh-logo:hover {
-  transform:rotate(360deg);
+  transform:rotate(360deg) scale(1.2);
+}
+
+.navbar-brand img {
+  width: 250px; /* Adjust to your desired initial size */
+  height: auto;
+  transition: width 0.2s ease, height 0.85s ease, top 0.2s ease, transform 1.5s ease; 
+  top:-50px/* Smooth transition when size changes */
+}
+
+/* When the logo reaches the top */
+.navbar-brand.shrink img {
+  width: 150px; 
+  top:0px/* Shrunk size */
+}
+
+#header {
+  position:sticky;
+  top:0;
+  z-index:2
 }
 
 

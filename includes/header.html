@@ -1,20 +1,26 @@
-<div class="p-0" style="background:url(https://cdn-cf-east.streamable.com/image/q10y1d.jpg?Expires=1621788120&Signature=cSzT3q0LdMfpEnjmTOu3Zo-HJgiB5aSBQaERXA4iOg69Th54APUkTfuAD4fN5uaJF7TGSRKGQXgQvI0zFjnZQQzDEP3afxPGVk5ztMwsQVgEUV0-G5LrQOU0KtSVX~olBmQjmc5JlxNMR69yN-0UH7ECrMN9d07h5TqBq5dgO9hcIADrTXh0~YSANA0xrv5G1P0gwUDQUMRfEUYJkcmQ-fk5b-HuG-3ad2jeMz7assr0n4Ry4DgZs3i53pZR5r4fQefe6L4-8Jz6qh~GQooFahsNQEEuRZTfgxFi3gD1fvmCfkdjVpWGguNXPZRi0pL4-ubg4mI6cFGEeGDb-rM-ng__&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ);background-size:cover;background-position:center;">
-    <div class="p-2 justify-content-center" ">
-    <center>  <img src="https://jinippybasile.carrd.co/assets/images/image01.png?v=1ec3f144" class="col-3 mx-auto annoying-ahh-logo"></center>
-    </div>
-</div>
 
-<nav class="nav navbar navbar-expand-md py-4">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/charadex.css">
+
+</head>
+<body>
+
+    
+<header>
+    <nav class="navbar nav navbar-expand-md py-2" >
+      
+        <a class="navbar-brand" href="index.html" style="position:absolute;top:0">
+            <img src="https://jinippybasile.carrd.co/assets/images/image01.png?v=1ec3f144" class="col-12 mx-auto annoying-ahh-logo">
+        </a>
+    
+  
    
-       
-    </div>
-    <div class="container">
 
         <!-- Brand -->
-        <a class="navbar-brand" href="index.html"><i class="fas fa-floppy-disk fa-fw"></i> Charadex</a>
+        
 
         <!-- Toggle -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#charadexnav">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#charadexnav" style="margin-left:auto;margin-right:0">
             <i class="fa-solid fa-bars"></i>
         </button>
 
@@ -64,5 +70,26 @@
             </ul>
         </div>
 
-    </div>
-</nav>
+  
+    </nav>
+    
+</header>
+
+
+<script>
+    window.onscroll = function() {
+      shrinkLogo();
+  };
+  
+  function shrinkLogo() {
+      const logo = document.querySelector(".navbar-brand");
+      const headerHeight = document.querySelector("header").offsetHeight;
+  
+      if (window.scrollY > headerHeight) {
+          logo.classList.add("shrink"); // Add the class to shrink the logo
+      } else {
+          logo.classList.remove("shrink"); // Remove the class when scrolled back
+      }
+  }
+  </script>
+</body>
