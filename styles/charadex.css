@@ -51,7 +51,7 @@ body {
   /* ============================================================= */
   /* Navbar
   ================================================================ */
-  --cd-navbar-background-color:          #222222;
+  --cd-navbar-background-color:          #000000;
   --cd-navbar-brand-color:               var(--cd-primary-color);
   --cd-navbar-brand-color-hover:         var(--cd-secondary-color);
   --cd-navbar-text-color:                var(--cd-content-background-color);
@@ -520,6 +520,19 @@ img {
 .rounded {border-radius: var(--cd-border-radius) !important}
 .rounded-circle {border-radius: 100%;}
 .rounded-0 {border-radius: 0 !important;}
+
+/* ============================================================= */
+/* JINIPPY'S TWEAKING HELP ME SAVE ME
+/* ============================================================= */
+.annoying-ahh-logo {
+  transition:transform 1.5s ease;
+}
+.annoying-ahh-logo:hover {
+  transform:rotate(360deg);
+}
+
+
+
 
 /* ============================================================= */
 /* Chee's Tweaks
