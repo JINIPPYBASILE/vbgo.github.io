@@ -19,7 +19,7 @@ body {
   /* ============================================================= */
   /* Primary Color
   ================================================================ */
-  --cd-primary-color:                    #8FB7D4;
+  --cd-primary-color:                    #bed5e5;
   --cd-primary-text-color:               #fff;
 
   /* ============================================================= */
@@ -267,6 +267,7 @@ a:active {
 .navbar .navbar-nav .nav-link:hover, 
 .navbar .navbar-nav .nav-link:focus{
   color: var(--cd-navbar-link-color-hover) !important;
+  font-weight:900;
 }
 
 .navbar .navbar-toggler {
@@ -277,6 +278,7 @@ a:active {
 .navbar .nav-link {
     display: flex;
     align-items: center;
+
 }
 
 .navbar .nav-link-icon {
@@ -577,6 +579,7 @@ img {
   animation-name:freakyhoverelements;
   animation-duration:4s;
   animation-iteration-count:1;
+  color:#484848!important;
   font-family:inconsolata;
   box-shadow:0px 0px 10px #000000,7px 2px 0px #000 ;
   font-weight:900;
@@ -589,6 +592,7 @@ img {
   animation-name:freakyhoverelements;
   animation-duration:4s;
   animation-iteration-count:1;
+  color:#484848!important;
  box-shadow:0px 0px 10px #000000,7px 2px 0px #000;
  font-weight:900;
  clip-path: polygon(0 43%, 4% 3%, 46% 13%, 76% 0, 97% 3%, 100% 23%, 98% 94%, 86% 95%, 74% 98%, 41% 100%, 29% 92%, 2% 100%);
