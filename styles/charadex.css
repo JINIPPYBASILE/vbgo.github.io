@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+
 body {
 
   /* ============================================================= */
@@ -63,7 +67,7 @@ body {
   /* Main Fonts
   ================================================================ */
   --cd-body-font-family:                 'Montserrat', sans-serif;
-  --cd-header-font-family:               'Comfortaa', sans-serif;
+  --cd-header-font-family:               'inconsolata', sans-serif;
 
 
   /* ============================================================= */
@@ -564,28 +568,50 @@ img {
 .dropdown-item:active {
   color: var(--cd-navbar-dropdown-link-color-hover)!important;
   background-color: var(--cd-navbar-dropdown-background-hover) !important;
+  font-family:inconsolata
 }
 
 
 .navbar .turn-left:hover {
   transform:scale(1.1) rotate(-1deg);
+  animation-name:freakyhoverelements;
+  animation-duration:4s;
+  animation-iteration-count:1;
+  font-family:inconsolata;
+  box-shadow:0px 0px 10px #000000,7px 2px 0px #000 ;
+  font-weight:900;
+  clip-path: polygon(0 43%, 4% 3%, 46% 13%, 76% 0, 97% 3%, 100% 23%, 98% 94%, 86% 95%, 74% 98%, 41% 100%, 29% 92%, 2% 100%);
   
 }
 
 .navbar .turn-right:hover {
   transform:scale(1.1) rotate(1deg);
-}
-
-.text-scale:hover {
-  transform:scale(1.63);
-}
-.annoying-ahh-text {
-  color:#fff;
-  animation-name: freakyletters;
-  animation-duration: 7s;
-  animation-iteration-count:infinite;
+  animation-name:freakyhoverelements;
+  animation-duration:4s;
+  animation-iteration-count:1;
+ box-shadow:0px 0px 10px #000000,7px 2px 0px #000;
+ font-weight:900;
+ clip-path: polygon(0 43%, 4% 3%, 46% 13%, 76% 0, 97% 3%, 100% 23%, 98% 94%, 86% 95%, 74% 98%, 41% 100%, 29% 92%, 2% 100%);
 
 }
+
+.nav-link{
+  transition: transform 0.25s ease; 
+}
+
+.nav-link:hover {
+  transform:scale(1.09);
+}
+
+  .annoying-ahh-text {
+    color:#fff;
+    animation-name: freakyletters;
+    animation-duration: 7s;
+    animation-iteration-count:infinite;
+  
+  }
+  
+
 
 @media (max-width:768px) {
   .navbar-brand img {
@@ -594,9 +620,30 @@ img {
   
 }
 
+
+@keyframes freakyhoverelements {
+  0% {font-family:webdings;transform:translateX(6), translateX(10);font-weight:200;text-decoration:line-through;box-shadow:0px 0px 10px #000000,7px 2px 0px #000;clip-path: polygon(1% 42%, 14% 13%, 41% 23%, 72% 16%, 82% 28%, 100% 23%, 100% 75%, 91% 88%, 60% 78%, 29% 85%, 10% 77%, 0 87%);}
+    1.5% { font-family:webdings;transform:translateX(-10), translateX(1);font-weight:900;font-style:italics;box-shadow: -0.07em 0 0 #565656, -0.025em -0.04em 0 #a8a8a8,
+      -0.07em -0.025em 0 #010057, 0.05em 0.035em 0 #565656, 0.03em 0 0 #a8a8a8,
+      0 -0.04em 0 #e4e5ff;clip-path: polygon(0 0, 29% 13%, 62% 4%, 75% 20%, 91% 9%, 100% 23%, 100% 97%, 84% 89%, 63% 83%, 62% 94%, 20% 90%, 0 87%);}
+    3% { font-family:wingdings;font-weight:200; box-shadow: 0.05em 0.035em 0 #565656, 0.03em 0 0 #a8a8a8,
+      0 -0.04em 0 #e4e5ff; clip-path: polygon(1% 42%, 14% 13%, 41% 23%, 72% 16%, 82% 28%, 100% 23%, 100% 75%, 91% 88%, 60% 78%, 29% 85%, 10% 77%, 0 87%);}
+    4.5% {font-family:wingdings;font-weight:700; text-decoration:line-through; box-shadow:0px 0px 10px #000000,7px 2px 0px #000 ;clip-path: polygon(0 43%, 7% 9%, 39% 25%, 75% 20%, 91% 9%, 100% 23%, 98% 94%, 74% 75%, 74% 98%, 44% 90%, 38% 80%, 7% 93%); }
+    6% { font-family:symbols; font-weight:700;text-decoration:underline;clip-path: polygon(0 43%, 7% 9%, 58% 4%, 73% 8%, 91% 9%, 100% 23%, 98% 94%, 81% 90%, 74% 98%, 44% 90%, 26% 96%, 0 96%); }
+    7.5% { font-family:courier new;font-weight:700;text-decoration:none;clip-path: polygon(0 43%, 4% 3%, 46% 13%, 76% 0, 97% 3%, 100% 23%, 98% 94%, 86% 95%, 74% 98%, 41% 100%, 29% 92%, 2% 100%);}
+    8% { font-family:inconsolata;font-weight:200;color:#fff ;}
+    10% { font-family:inconsolata;color:#fff ;}
+    15% { font-family:inconsolata;font-weight:800; }
+    25% { }
+    30% {font-family:inconsolata;font-weight:900;}
+   50% {font-family:inconsolata;font-weight:900;}
+   75% { font-family:inconsolata;font-weight:900; }
+    100% { box-shadow:0px 0px 10px #000000,7px 2px 0px #000 ;font-family:inconsolata;font-weight:900; }
+}
+
 @keyframes freakyletters {
-    0% {font-family:webdings;transform:translateX(6), translateX(10);font-weight:200;text-decoration:line-through;text-shadow:0px 0px 10px #000000,7px 2px 0px #000 }
-    1.5% { font-family:webdings;transform:translateX(-10), translateX(1);font-weight:900;font-style:italics;text-shadow: -0.07em 0 0 #565656, -0.025em -0.04em 0 #a8a8a8,
+    0% {font-family:webdings;font-weight:200;text-decoration:line-through;text-shadow:0px 0px 10px #000000,7px 2px 0px #000 }
+    1.5% { font-family:webdings;;font-weight:900;font-style:italics;text-shadow: -0.07em 0 0 #565656, -0.025em -0.04em 0 #a8a8a8,
       -0.07em -0.025em 0 #010057, 0.05em 0.035em 0 #565656, 0.03em 0 0 #a8a8a8,
       0 -0.04em 0 #e4e5ff}
     3% { font-family:wingdings;font-weight:200; text-shadow: 0.05em 0.035em 0 #565656, 0.03em 0 0 #a8a8a8,
@@ -607,11 +654,11 @@ img {
     8% { font-family:inconsolata;font-weight:200;color:#fff ;}
     10% { font-family:inconsolata;color:#fff ;}
     15% { font-family:inconsolata;font-weight:800; }
-    25% { transform: rotate(1deg); }
+    25% { transform: rotate(2deg); }
     30% {font-family:inconsolata;font-weight:900;}
-   50% {transform: rotate(-1deg); }
-   75% { transform: rotate(1deg); }
-    100% {  transform: rotate(-1deg);text-shadow:0px 0px 10px #000000,7px 2px 0px #000  }
+   50% {transform: rotate(-2deg); }
+   75% { transform: rotate(2deg); }
+    100% {  transform: rotate(-2deg);text-shadow:0px 0px 10px #000000,7px 2px 0px #000  }
   }
 
   
