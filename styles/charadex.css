@@ -648,6 +648,12 @@ img {
   
 }
 
+@media (max-width:992px) {
+  .bobbingcubemobile {
+    display:none
+      }
+}
+
 .uglyahhshape {
   background-image:url(https://t3.ftcdn.net/jpg/10/00/04/90/360_F_1000049058_NoCP3GpqjzraG6LF6Evr1jJbVjwz0Rnz.jpg);
  background-size:cover;
@@ -663,6 +669,15 @@ img {
   
 }
 
+.glitchshape {
+ background-size:cover;
+ background-position:bottom;
+  background-blend-mode:luminosity;
+
+  text-align:center;
+  
+}
+
 @keyframes changingshapes{
   0% {clip-path: polygon(0 14%, 46% 0, 53% 14%, 85% 0%, 100% 9%, 90% 48%, 100% 55%, 89% 94%, 63% 100%, 10% 100%, 0 68%, 14% 45%);}
   12.5% {clip-path: polygon(0% 15%, 16% 0, 49% 10%, 79% 5%, 85% 15%, 100% 23%, 90% 68%, 100% 87%, 79% 90%, 33% 93%, 11% 100%, 0% 85%);}
@@ -674,15 +689,120 @@ img {
 87.5% {clip-path: polygon(0 26%, 10% 3%, 69% 0, 84% 19%, 100% 0, 96% 40%, 100% 55%, 100% 100%, 60% 88%, 4% 100%, 0 68%, 5% 45%);}
 100% {clip-path: polygon(0 6%, 17% 9%, 52% 0, 79% 5%, 100% 0, 86% 23%, 100% 42%, 100% 87%, 71% 100%, 39% 95%, 0 99%, 6% 84%);}
 }
-@keyframes imbreathing {
-  
-    0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
-    40% {transform: translateY(-10px);} 
-    60% {transform: translateY(-2px);} 
+
+
+@keyframes changingshapes2{
+  0% {clip-path: polygon(0% 15%, 13% 5%, 40% 2%, 67% 9%, 69% 28%, 100% 15%, 88% 68%, 100% 90%, 85% 100%, 15% 100%, 7% 91%, 0% 65%);}
+  12.5% { clip-path: polygon(11% 19%, 0 0, 63% 0, 51% 11%, 78% 0, 100% 15%, 92% 68%, 89% 100%, 17% 100%, 26% 86%, 0 93%, 0 66%);}
+  37.5%  {clip-path: polygon(10% 26%, 0 5%, 86% 0, 80% 4%, 100% 0, 100% 39%, 91% 38%, 100% 100%, 56% 94%, 0 100%, 6% 91%, 0 56%);}
+  50%  {clip-path: polygon(0 0, 10% 8%, 99% 0, 83% 15%, 100% 26%, 88% 39%, 98% 81%, 89% 92%, 56% 100%, 6% 100%, 0 60%, 8% 64%);}
+62.5% {clip-path: polygon(9% 7%, 27% 4%, 94% 4%, 100% 22%, 90% 35%, 99% 44%, 92% 78%, 100% 100%, 61% 92%, 6% 100%, 11% 82%, 0 60%);}
+75% {clip-path: polygon(0 40%, 11% 13%, 0 2%, 100% 9%, 88% 13%, 99% 18%, 91% 72%, 100% 84%, 99% 95%, 6% 100%, 0 76%, 8% 40%);}
+87.5% {clip-path: polygon(0 40%, 4% 19%, 0 2%, 44% 11%, 87% 0, 95% 18%, 100% 50%, 91% 84%, 99% 95%, 40% 100%, 4% 96%, 3% 66%);}
+100% {clip-path: polygon(0 40%, 23% 19%, 5% 0, 44% 11%, 100% 0, 91% 25%, 100% 50%, 91% 84%, 99% 95%, 24% 100%, 0 76%, 10% 59%); }
+}
+.changingshapes2 {
+  background-size:cover;
+  background-position:bottom;
+   background-blend-mode:luminosity;
+   animation-name:changingshapes2;
+      animation-iteration-count: infinite;
+      animation-duration: .95s;
+   text-align:center;
+   
+ }
+
+@keyframes changingshapes3{
+  0%{clip-path: polygon(10% 6%, 0 33%, 7% 48%, 0 64%, 6% 80%, 0 100%, 53% 100%, 76% 95%, 100% 100%, 95% 55%, 97% 28%, 100% 0, 82% 3%, 44% 11%, 58% 0);}
+  12.5%{clip-path: polygon(3% 1%, 0 33%, 0 65%, 6% 66%, 0 99%, 14% 96%, 53% 100%, 97% 94%, 90% 90%, 100% 54%, 100% 8%, 89% 0, 85% 11%, 59% 6%, 59% 0);}
+   27.5%{clip-path: polygon(5% 2%, 10% 32%, 0 57%, 13% 75%, 1% 93%, 22% 91%, 36% 100%, 59% 89%, 85% 98%, 91% 67%, 100% 59%, 97% 3%, 85% 9%, 75% 0);}
+   30%{clip-path: polygon(5% 2%, 3% 32%, 0 57%, 6% 78%, 1% 93%, 17% 98%, 49% 100%, 59% 95%, 85% 94%, 97% 100%, 100% 59%, 95% 6%, 75% 0, 53% 7%);}
+   32%{clip-path: polygon(0 0, 0 34%, 2% 57%, 3% 78%, 1% 93%, 9% 100%, 43% 96%, 67% 100%, 85% 94%, 97% 100%, 97% 59%, 100% 9%, 75% 0, 50% 3%, 53% 7%);}
+   
+
 }
 
+@keyframes bobbingcube{
+
+  0%{transform:translateY(5px)}
+   30%{transform:translateY(-5px)}
+   100%{transform:translateY(5px) }
+
+ 
+   
+
+}
+.changingshapes3 {
+  background-size:cover;
+  background-position:bottom;
+   background-blend-mode:luminosity;
+   animation-name:changingshapes3;
+      animation-iteration-count: infinite;
+      animation-duration: .95s;
+   text-align:center;
+   
+ }
+
+ .bobbingcube {
+   animation-name:bobbingcube;
+      animation-iteration-count: infinite;
+      animation-duration: .95s;
+   text-align:center;
+   
+ }
+
+@keyframes changingshapes4{
+  0% {clip-path: polygon(4% 26%, 0 6%, 86% 0, 65% 6%, 100% 0, 95% 19%, 95% 69%, 100% 94%, 33% 93%, 0 100%, 6% 91%, 0 35%);}
+  12.5% { }
+  25% {}
+  37.5%  {}
+  50%  {}
+62.5% {}
+75% {}
+87.5% {}
+100% { }
+}
+
+@keyframes changingshapes5{
+  0% {}
+  12.5% { }
+  25% {}
+  37.5%  {}
+  50%  {}
+62.5% {}
+75% {}
+87.5% {}
+100% { }
+}
+
+@keyframes changingshapes6{
+  0% {}
+  12.5% { }
+  25% {}
+  37.5%  {}
+  50%  {}
+62.5% {}
+75% {}
+87.5% {}
+100% { }
+}
+
+
+@keyframes changingshapes___{
+  0% {}
+  12.5% { }
+  25% {}
+  37.5%  {}
+  50%  {}
+62.5% {}
+75% {}
+87.5% {}
+100% { }
+}
+
+
 @keyframes freakyhoverbuttons {
-  0% {font-family:webdings;transform:translateX(6), translateX(10);font-weight:200;text-decoration:line-through;box-shadow:0px 0px 10px #000000,7px 2px 0px #000;clip-path: polygon(1% 42%, 14% 13%, 41% 23%, 72% 16%, 82% 28%, 100% 23%, 100% 75%, 91% 88%, 60% 78%, 29% 85%, 10% 77%, 0 87%);}
+  0% {font-family:webdings;transform:translateX(6), translateX(10);font-weight:200;text-decoration:line-through;box-shadow:0px 0px 10px #000000,7px 2px 0px #000;clip-path: polygon(1% 42%, 14% 13%, 41% 23%, 72% 16%, 82% 28%, 100% 23%, 100% 75%, 91% 88%, 60% 78%, 29% 85%, 10% 77%, 0 37%);}
     1.5% { font-family:webdings;transform:translateX(-10), translateX(1);font-weight:900;font-style:italics;box-shadow: -0.07em 0 0 #565656, -0.025em -0.04em 0 #a8a8a8,
       -0.07em -0.025em 0 #010057, 0.05em 0.035em 0 #565656, 0.03em 0 0 #a8a8a8,
       0 -0.04em 0 #e4e5ff;clip-path: polygon(0 0, 29% 13%, 62% 4%, 75% 20%, 91% 9%, 100% 23%, 100% 97%, 84% 89%, 63% 83%, 62% 94%, 20% 90%, 0 87%);}
