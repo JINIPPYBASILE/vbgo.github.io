@@ -513,6 +513,10 @@ a.badge.badge-primary:active  {
 h1, h2, h3,
 h4, h5, h6 {
   font-family: var(--cd-navbar-font-family) !important;
+  background-color:#8cb0b3;
+  padding:10px;
+  color:#fff;
+  border-radius:10px;
 }
 
 hr {
@@ -863,7 +867,13 @@ img {
     100% {  transform: rotate(-2deg);text-shadow:0px 0px 10px #000000,7px 2px 0px #000  }
   }
 
-  
+
+  @keyframes jumphover {
+    0% {transform:scale(1)}
+    100% {transform:scale(2)}
+    
+  }
+
 
 /* The element to apply the animation to */
 
@@ -913,11 +923,54 @@ p:last-child {
     margin-bottom: 0 !important;
 }
 
-/* Small container for more compact view */
-.container {
-  max-width: 950px !important;
+
+.webheader {
+  background-color: var(--cd-navbar-background-color);
+  color: #bed5e5;
 }
 
+.webcard {
+ background:#dde6ea !important;
+}
+
+.webcard-holder{
+  border:2px solid #ffffff00;
+  background-color:#50575c;
+  filter:drop-shadow(-5px 5px #698f9a) drop-shadow(5px -5px #fff4d6) drop-shadow(0px 0px 10px #000);
+  opacity:0.94;
+  transform:scale(1);
+  transition:all 0.3s ease;
+  display: inline-block;
+}
+
+.webcard-holder:hover {
+opacity:1;
+border:7px solid var(--cd-navbar-background-color);
+
+}
+
+.webtab {
+  background-color: var(--cd-navbar-background-color);
+  color:#dde6ea;
+  border-top-left-radius:10px;
+  border-top-right-radius:10px;
+  transition:all 0.3s ease
+
+}
+
+
+.webtab:hover {
+  background-color: #383333;
+  color:#fff
+
+}
+
+
+.searchbar {
+  border-radius:20px;
+  background-color: #000000;
+  filter:drop-shadow(0px 0px 4px #89a6b67e)
+}
 /* Prevents awkward load in stutter */
 #charadex-gallery .list .card-body {
   min-height: calc(200px + 2.5rem);
