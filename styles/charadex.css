@@ -432,7 +432,7 @@ a:active {
   border-width: var(--cd-button-border-width) !important;
   border-style: var(--cd-button-border-style) !important;
   border-color: var(--cd-button-border-color) !important;
-  border-radius: var(--cd-button-border-radius) !important;
+  border-radius: 0px;
 }
 
 .btn.btn-primary:hover,
@@ -517,6 +517,7 @@ h4, h5, h6 {
   padding:10px;
   color:#fff;
   border-radius:10px;
+  border-bottom-left-radius:0px;border-bottom-right-radius:0px
 }
 
 hr {
@@ -578,7 +579,7 @@ img {
 }
 
 
-.navbar .turn-left:hover {
+.navbar .turn-left:hover,  .turn-left:hover {
   transform:scale(1.1) rotate(-1deg);
   animation-name:freakyhoverelements;
   animation-duration:4s;
@@ -591,7 +592,7 @@ img {
   
 }
 
-.navbar .turn-right:hover {
+.navbar .turn-right:hover,  .turn-right:hover {
   transform:scale(1.1) rotate(1deg);
   animation-name:freakyhoverelements;
   animation-duration:4s;
@@ -810,10 +811,10 @@ img {
     1.5% { font-family:webdings;transform:translateX(-10), translateX(1);font-weight:900;font-style:italics;box-shadow: -0.07em 0 0 #565656, -0.025em -0.04em 0 #a8a8a8,
       -0.07em -0.025em 0 #010057, 0.05em 0.035em 0 #565656, 0.03em 0 0 #a8a8a8,
       0 -0.04em 0 #e4e5ff;clip-path: polygon(0 0, 29% 13%, 62% 4%, 75% 20%, 91% 9%, 100% 23%, 100% 97%, 84% 89%, 63% 83%, 62% 94%, 20% 90%, 0 87%);}
-    3% { font-family:wingdings;font-weight:200; box-shadow: 0.05em 0.035em 0 #565656, 0.03em 0 0 #a8a8a8,
+    3% { font-family:wingdings;font-size:40%;font-weight:200; box-shadow: 0.05em 0.035em 0 #565656, 0.03em 0 0 #a8a8a8,
       0 -0.04em 0 #e4e5ff; clip-path: polygon(1% 42%, 14% 13%, 41% 23%, 72% 16%, 82% 28%, 100% 23%, 100% 75%, 91% 88%, 60% 78%, 29% 85%, 10% 77%, 0 87%);}
-    4.5% {font-family:wingdings;font-weight:700; text-decoration:line-through; box-shadow:0px 0px 10px #000000,7px 2px 0px #000 ;clip-path: polygon(0 43%, 7% 9%, 39% 25%, 75% 20%, 91% 9%, 100% 23%, 98% 94%, 74% 75%, 74% 98%, 44% 90%, 38% 80%, 7% 93%); }
-    6% { font-family:symbols; font-weight:700;text-decoration:underline;clip-path: polygon(0 43%, 7% 9%, 58% 4%, 73% 8%, 91% 9%, 100% 23%, 98% 94%, 81% 90%, 74% 98%, 44% 90%, 26% 96%, 0 96%); }
+    4.5% {font-family:wingdings;font-size:40%;font-weight:700; text-decoration:line-through; box-shadow:0px 0px 10px #000000,7px 2px 0px #000 ;clip-path: polygon(0 43%, 7% 9%, 39% 25%, 75% 20%, 91% 9%, 100% 23%, 98% 94%, 74% 75%, 74% 98%, 44% 90%, 38% 80%, 7% 93%); }
+    6% { font-family:symbols; font-size:40%;font-weight:700;text-decoration:underline;clip-path: polygon(0 43%, 7% 9%, 58% 4%, 73% 8%, 91% 9%, 100% 23%, 98% 94%, 81% 90%, 74% 98%, 44% 90%, 26% 96%, 0 96%); }
     7.5% { font-family:courier new;font-weight:700;text-decoration:none;clip-path: polygon(0 43%, 4% 3%, 46% 13%, 76% 0, 97% 3%, 100% 23%, 98% 94%, 86% 95%, 74% 98%, 41% 100%, 29% 92%, 2% 100%);}
     8% { font-family:inconsolata;font-weight:200;color:#fff;clip-path:none}
     10% { font-family:inconsolata;color:#fff ;}
@@ -945,7 +946,7 @@ p:last-child {
 
 .webcard-holder:hover {
 opacity:1;
-border:7px solid var(--cd-navbar-background-color);
+border:5px solid var(--cd-navbar-background-color);
 
 }
 
@@ -965,6 +966,13 @@ border:7px solid var(--cd-navbar-background-color);
 
 }
 
+.fancylink:hover{
+  background-color:#bed5e5
+}
+
+.icons {
+  list-style-type: none 
+}
 
 .searchbar {
   border-radius:20px;
