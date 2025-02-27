@@ -542,7 +542,7 @@ img {
   transition:transform 1.5s ease;
 }
 .annoying-ahh-logo:hover {
-  transform:rotate(360deg) scale(1.2);
+  transform:rotate(360deg) scale(1.1);
 }
 
 .navbar-brand img {
@@ -651,12 +651,25 @@ img {
     display:none !important;
   }
   
+ 
 }
 
 @media (max-width:992px) {
   .bobbingcubemobile {
     display:none
       }
+       .cubecollection{
+    display:none
+  }
+
+  .changingshapes2:hover {
+    transform:scale(1.1) translateX(10%) !important;
+  
+   }
+   .changingshapes3:hover {
+    transform:scale(1.1) translateX(-10%) !important;
+  
+   }
 }
 
 .uglyahhshape {
@@ -696,26 +709,6 @@ img {
 }
 
 
-@keyframes changingshapes2{
-  0% {clip-path: polygon(0% 15%, 13% 5%, 40% 2%, 67% 9%, 69% 28%, 100% 15%, 88% 68%, 100% 90%, 85% 100%, 15% 100%, 7% 91%, 0% 65%);}
-  12.5% { clip-path: polygon(11% 19%, 0 0, 63% 0, 51% 11%, 78% 0, 100% 15%, 92% 68%, 89% 100%, 17% 100%, 26% 86%, 0 93%, 0 66%);}
-  37.5%  {clip-path: polygon(10% 26%, 0 5%, 86% 0, 80% 4%, 100% 0, 100% 39%, 91% 38%, 100% 100%, 56% 94%, 0 100%, 6% 91%, 0 56%);}
-  50%  {clip-path: polygon(0 0, 10% 8%, 99% 0, 83% 15%, 100% 26%, 88% 39%, 98% 81%, 89% 92%, 56% 100%, 6% 100%, 0 60%, 8% 64%);}
-62.5% {clip-path: polygon(9% 7%, 27% 4%, 94% 4%, 100% 22%, 90% 35%, 99% 44%, 92% 78%, 100% 100%, 61% 92%, 6% 100%, 11% 82%, 0 60%);}
-75% {clip-path: polygon(0 40%, 11% 13%, 0 2%, 100% 9%, 88% 13%, 99% 18%, 91% 72%, 100% 84%, 99% 95%, 6% 100%, 0 76%, 8% 40%);}
-87.5% {clip-path: polygon(0 40%, 4% 19%, 0 2%, 44% 11%, 87% 0, 95% 18%, 100% 50%, 91% 84%, 99% 95%, 40% 100%, 4% 96%, 3% 66%);}
-100% {clip-path: polygon(0 40%, 23% 19%, 5% 0, 44% 11%, 100% 0, 91% 25%, 100% 50%, 91% 84%, 99% 95%, 24% 100%, 0 76%, 10% 59%); }
-}
-.changingshapes2 {
-  background-size:cover;
-  background-position:bottom;
-   background-blend-mode:luminosity;
-   animation-name:changingshapes2;
-      animation-iteration-count: infinite;
-      animation-duration: .95s;
-   text-align:center;
-   
- }
 
 @keyframes changingshapes3{
   0%{clip-path: polygon(10% 6%, 0 33%, 7% 48%, 0 64%, 6% 80%, 0 100%, 53% 100%, 76% 95%, 100% 100%, 95% 55%, 97% 28%, 100% 0, 82% 3%, 44% 11%, 58% 0);}
@@ -737,16 +730,34 @@ img {
    
 
 }
-.changingshapes3 {
+.changingshapes3, .changingshapes2 {
   background-size:cover;
   background-position:bottom;
    background-blend-mode:luminosity;
-   animation-name:changingshapes3;
-      animation-iteration-count: infinite;
-      animation-duration: .95s;
    text-align:center;
+   transition:all 0.3s ease-in-out
    
  }
+
+
+ .changingshapes3:hover {
+  animation-name:changingshapes3;
+  animation-iteration-count: 1;
+  animation-duration: .75s;
+  transform:scale(1.2) translateX(-10%);
+
+
+ }
+
+
+ .changingshapes2:hover {
+  animation-name:changingshapes3;
+  animation-iteration-count: 1;
+  animation-duration: .75s;
+  transform:scale(1.2) translateX(10%);
+
+ }
+
 
  .bobbingcube {
    animation-name:bobbingcube;
@@ -754,8 +765,25 @@ img {
       animation-duration: .95s;
    text-align:center;
    
+   
  }
 
+ .annoyingcubes {
+  background-color: #cdf3f946;
+  border:1px solid #fff;
+  filter: drop-shadow(0px 0px 4px #002d32);
+ background-blend-mode: difference !important;
+ backdrop-filter:blur(2)
+ }
+
+
+@media (min-width:992px){
+  .projectimage {
+    max-height:100px;
+    max-width:250px
+   }
+   
+}
 @keyframes changingshapes4{
   0% {clip-path: polygon(4% 26%, 0 6%, 86% 0, 65% 6%, 100% 0, 95% 19%, 95% 69%, 100% 94%, 33% 93%, 0 100%, 6% 91%, 0 35%);}
   12.5% { }
@@ -903,6 +931,11 @@ body {
     }
 }
 
+@media (max-width: 768px) {
+  #main-container {
+      padding: 3rem 3rem;
+  }
+}
 /* Fades container in on load so its not as jarring */
 .softload {
   opacity: 0;
@@ -946,9 +979,22 @@ p:last-child {
 
 .webcard-holder:hover {
 opacity:1;
-border:5px solid var(--cd-navbar-background-color);
+border:2px solid var(--cd-navbar-background-color);
 
 }
+
+.idunnowhattocallthisleft,.idunnowhattocallthisright {
+  transition:all 0.35s ease
+  }
+
+.idunnowhattocallthisright:hover {
+transform:scale(1.05) rotate(1deg);
+}
+
+.idunnowhattocallthisleft:hover {
+  transform:scale(1.05) rotate(-1deg);
+  }
+
 
 .webtab {
   background-color: var(--cd-navbar-background-color);
