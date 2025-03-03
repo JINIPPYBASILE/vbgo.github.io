@@ -564,6 +564,7 @@ img {
   z-index:2
 }
 
+
 .navbar .dropdown-item,
 .navbar .dropdown-item-text {
   color: var(--cd-navbar-dropdown-link-color) !important;
