@@ -786,7 +786,7 @@ img {
   border:1px solid #fff;
   filter: drop-shadow(0px 0px 4px #002d32);
  background-blend-mode: difference !important;
- backdrop-filter:blur(2)
+ backdrop-filter: blur(1.3px) sepia(0.9) drop-shadow(2px 2px 2px #fff);
  }
 
 
@@ -796,7 +796,13 @@ img {
     max-width:250px
    }
    
+
+   
 }
+
+
+
+
 @keyframes changingshapes4{
   0% {clip-path: polygon(4% 26%, 0 6%, 86% 0, 65% 6%, 100% 0, 95% 19%, 95% 69%, 100% 94%, 33% 93%, 0 100%, 6% 91%, 0 35%);}
   12.5% { }
@@ -984,7 +990,7 @@ p:last-child {
   border:2px solid #ffffff00;
   background-color:#50575c;
   filter:drop-shadow(-5px 5px #698f9a) drop-shadow(5px -5px #fff4d6) drop-shadow(0px 0px 10px #000);
-  opacity:0.94;
+  opacity:0.98;
   transform:scale(1);
   transition:all 0.3s ease;
   display: inline-block;
