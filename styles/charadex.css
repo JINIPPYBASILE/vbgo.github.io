@@ -636,6 +636,7 @@ img {
 /* Shrink .container-2 only when any .card is hovered */
 .annoyingahhwrapper:hover .annoyingshrinkysquares {
     transform: scale(0.95);
+    transform-origin: 100% 0%;
 }
 
 /* Prevent shrinking when hovering over container-2 */
