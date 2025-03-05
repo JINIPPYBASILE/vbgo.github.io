@@ -19,6 +19,7 @@ let sheetPages = {
     prompts: "prompts",
     faq: "faq",
     staff: "mods",
+    todo: "todo",
 
 }
 
@@ -41,6 +42,9 @@ let options = {
 
         masterlistSheetPage: sheetPages.masterlist,
         numOfDesigns: 4,
+
+        todoSheetPage: sheetPages.todo,
+        numOfTodo: 4,
     
     },
 

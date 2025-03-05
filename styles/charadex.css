@@ -498,6 +498,11 @@ a.badge.badge-primary:active  {
 /* Misc
 /* ============================================================= */
 
+.stickyheaders {
+  position:sticky;
+  top:0
+}
+
 .text-primary {
   color: var(--cd-primary-color) !important;
 }
@@ -565,6 +570,28 @@ img {
 }
 
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+      background-color: var(--cd-faded-background-color);
+    border-width: 0px !important;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: var(--cd-primary-color);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--cd-primary-color);
+}
+
 .navbar .dropdown-item,
 .navbar .dropdown-item-text {
   color: var(--cd-navbar-dropdown-link-color) !important;
@@ -624,7 +651,7 @@ img {
 
 .shrinkycoolcardonhover {
   background-color: rgb(255, 255, 255, 0);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.1s ease-in-out;
   z-index: 50;
 }
 

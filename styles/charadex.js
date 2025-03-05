@@ -680,6 +680,35 @@ const frontPage = (options) => {
         }
     }; addEvents();
 
+
+   
+    // Staff
+    let addTodo = async () => {
+        if ($("#todo-gallery").length != 0) {
+            if (charadexInfo.numOfTodo != 0) {
+
+                // Grab dah sheet
+                let todo = await fetchSheet(charadexInfo.todoSheetPage);
+
+                // Show x Amount on Index
+                let indexTodo = todo.slice(0, charadexInfo.numOfTodo);
+
+                // Nyoom
+                let galleryOptions = {
+                    item: 'todo-item',
+                    valueNames: sheetArrayKeys(indexTodo),
+                };
+
+                // Render Gallery
+                let charadex = new List('todo-gallery', galleryOptions, indexTodo);
+
+            } else {
+                $("#todo-gallery").hide();
+            }
+        }
+    }; addTodo();
+
+
     // Staff
     let addStaff = async () => {
         if ($("#staff-gallery").length != 0) {
