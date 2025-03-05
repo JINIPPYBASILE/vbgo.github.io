@@ -503,6 +503,13 @@ a.badge.badge-primary:active  {
   top:0
 }
 
+
+.stickyfooter {
+  position:sticky;
+  bottom:0
+}
+
+
 .text-primary {
   color: var(--cd-primary-color) !important;
 }
