@@ -669,8 +669,10 @@ img {
 
 /* Shrink .container-2 only when any .card is hovered */
 .annoyingahhwrapper:hover .annoyingshrinkysquares {
-    transform: scale(0.95);
-    transform-origin: 100% 0%;
+    transform: scale(0.95) translateY(50px) rotate(-1deg);
+    transform-origin: center;
+  
+    
 }
 
 /* Prevent shrinking when hovering over container-2 */
@@ -685,6 +687,7 @@ img {
   position:absolute;
   top:0;
   z-index: -1;
+  transition:all 0.3s ease-in-out
 }
 
 .nav-link{
@@ -1108,17 +1111,17 @@ p:last-child {
 .webcard-holder{
   border:2px solid #ffffff00;
   background-color:#50575c;
-  filter:drop-shadow(-5px 5px #698f9a) drop-shadow(5px -5px #fff4d6) drop-shadow(0px 0px 10px #000) brightness(0.89);
+  filter:drop-shadow(-5px 5px #698f9a) drop-shadow(5px -5px #fff4d6) drop-shadow(0px 0px 10px #000) drop-shadow(0px 0px 10px #00000000) brightness(0.89);
   opacity:0.98;
   transform:scale(1);
-  transition:all 0.3s ease;
+  transition:all 0.3s ease-in-out;
   display: inline-block;
 }
 
 .webcard-holder:hover {
 opacity:1;
 border:2px solid var(--cd-navbar-background-color);
-filter: drop-shadow(-5px 5px #698f9a) drop-shadow(5px -5px #fff4d6) drop-shadow(0px 0px 10px #000)  brightness(0.95);
+filter: drop-shadow(-5px 5px #698f9a) drop-shadow(5px -5px #fff4d6) drop-shadow(0px 0px 15px #000) drop-shadow(0px 0px 10px #00000057) brightness(0.95);
 animation-name:hoverbounce;
 animation-iteration-count: infinite;
 animation-duration:3s;
