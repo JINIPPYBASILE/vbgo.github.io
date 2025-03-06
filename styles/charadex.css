@@ -703,7 +703,35 @@ img {
     animation-iteration-count:infinite;
   
   }
+
+  .psychyouthought {
+    height:350px;
+    background-image:url(https://i.postimg.cc/6qywTykf/PXL-20241214-182625776.jpg);
+    background-position:center;
+    background-size:cover;
+    background-color:var(--cd-body-text-color) !important;
+color:rgba(235,235,235,0);
+transition: all 0.2s ease-in-out
+
+  }
+  @keyframes itsme{
+    0%{transform:translateY(10px)}
+     50%{transform:translateY(-5px)}
+     100%{transform:translateY(10px) }
+  }
+
+  .itsme {
+animation-name:itsme;
+animation-iteration-count:infinite;
+animation-duration: 3s;
+  }
   
+  .psychyouthought:hover {
+    background-color:var(--cd-body-text-color) !important;
+    background-image:url();
+    color:var(--cd-primary-color);
+
+  }
 
   .emoahhselfportrait {
     filter:drop-shadow(5px 5px 0 #000);
@@ -1090,8 +1118,17 @@ p:last-child {
 .webcard-holder:hover {
 opacity:1;
 border:2px solid var(--cd-navbar-background-color);
-filter: drop-shadow(-5px 5px #698f9a) drop-shadow(5px -5px #fff4d6) drop-shadow(0px 0px 10px #000)  brightness(0.95)
+filter: drop-shadow(-5px 5px #698f9a) drop-shadow(5px -5px #fff4d6) drop-shadow(0px 0px 10px #000)  brightness(0.95);
+animation-name:hoverbounce;
+animation-iteration-count: infinite;
+animation-duration:3s;
+animation-delay: 0.05s;
+}
 
+@keyframes hoverbounce{
+  0%{transform:translateY(0px)}
+   50%{transform:translateY(-10px)}
+   100%{transform:translateY(0px) }
 }
 
 .idunnowhattocallthisleft,.idunnowhattocallthisright {
