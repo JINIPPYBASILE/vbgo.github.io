@@ -1118,6 +1118,15 @@ p:last-child {
   display: inline-block;
 }
 
+.DFFF00{
+  transition:all 0.3s ease
+}
+
+.DFFF00:hover {
+  background-color:#DFFF00;
+  color:var(--cd-body-font-family)
+}
+
 .webcard-holder:hover {
 opacity:1;
 border:2px solid var(--cd-navbar-background-color);
