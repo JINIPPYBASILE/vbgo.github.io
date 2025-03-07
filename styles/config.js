@@ -48,7 +48,16 @@ let options = {
     
     },
 
+   /* About me
+    /* --------------------------------------------------------------- */
+    aboutme: {
 
+        promptSheetPage: sheetPages.prompts,
+        numOfPrompts: 1,
+    
+    },
+
+    
     /* Masterlist
     /* --------------------------------------------------------------- */
     masterlist: {

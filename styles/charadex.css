@@ -728,6 +728,18 @@ animation-name:itsme;
 animation-iteration-count:infinite;
 animation-duration: 3s;
   }
+
+  @keyframes titlecaption{
+    0%{transform:translateY(-5px)}
+     50%{transform:translateY(10px)}
+     100%{transform:translateY(-5px) }
+  }
+
+  .titlecaption {
+animation-name:titlecaption;
+animation-iteration-count:infinite;
+animation-duration: 3s;
+  }
   
   .psychyouthought:hover {
     background-color:var(--cd-body-text-color) !important;
