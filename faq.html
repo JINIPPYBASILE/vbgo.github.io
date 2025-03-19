@@ -55,71 +55,157 @@
     <!-- --------------------------------------------------------------------
     <-- Header
     <-------------------------------------------------------------------- -->
-    
+    <div class="load-html" id="banner" data-source="includes/banner.html"></div>
     <div class="load-html" id="header" data-source="includes/header.html"></div>
 
 
     <!-- Spinner for loading-->
     <div class="spinner-border m-auto" id="loading"></div>
 
+    <div class="container softload py-md-5 my-4 py-4  " id="main-container" >
+           
+       
+        <div class="annoyingahhwrapper col-lg-12 col-12 ml-n5 mr-n5">
+            <div class="col-12">
+                 <div class="shrinkycoolcardonhover col-12">
+                    <div class="rounded-0 idunnowhattocallthisleft col-12" style="z-index:40">
+                        <div class=" webcard-holder "  id="webcardholder">
+                            <div class="col-lg-3 col-6">
+                                <div class="webtab col-12 pt-1 pl-3">cv.html  <a class="fa-regular fa-x ml-2" > </a>
+                                  </div>
+                            </div>
+                    
+                            <div class="webheader p-2 rounded-0"> 
+                             <div class="row no-gutters">
+                                <i class="fa-solid fa-arrow-left mx-1 mt-1"></i>
+                                <i class="fa-solid fa-arrow-right mx-1 mt-1" style="opacity:0.6"></i>
+                                <i class="fa-solid fa-arrow-rotate-right mx-1 mr-2 mt-1"></i>
+                                <div class="searchbar col-lg-10 col-md-9">
+                                   <p class="website-name ml-3 "> <i class="fa-solid fa-gun"></i> | https://vbgo.github.io/cv.html </p>
+                                </div>
+                                <i class="fa-solid fa-user  mx-1 mt-1"></i>
+                                <i class="fa-solid fa-download  mx-1 mt-1"></i>
+                                <i class="fa-solid fa-ellipsis-vertical  mx-1 mt-1"></i>
+                             </div>
+                            </div>
+                            <div class=" webcard card p-2 px-3 rounded-0">
+                                <div id="charadex-gallery">
+                                      <!-- Filters
+                                    ----------------------------------------------------------------- -->
+                                    <div class="card p-md-3 p-4 mb-3">
+                        
+                                        <h3 class="mb-0"><a href="faq.html">CV and Experiences</a></h3>
+                                        <p class="mt-3">Please feel free to browse through my various profiles. If you would like a more standard CV, or a more formal display of my work experiences, you may choose to 
+                                            refer to my Linkedin or my professional CV.
+                                        </p>
+                                   <p>You can sort through the experiences via the following using the search bar: <b>Tags / classification</b></p>
 
-    <!-- --------------------------------------------------------------------
-    <-- Masterlist
-    <-------------------------------------------------------------------- -->
-    <div class="container softload masterlist-container" id="main-container">
+                                   <p>You can also look at the tags via color:</p>
+                                   <div class="row no-gutters mt-n3">
+                                    <div class="col-4 p-2">
+                                        <div class="col-12" style="background-color:#c0c6d2;text-align: center;">WORK</div>
+                                    </div>
+                                    <div class="col-4 p-2">
+                                        <div class="col-12" style="background-color:#c0d2cd;text-align: center">SCHOOL</div>
+                                    </div>
+                                    <div class="col-4 p-2">
+                                        <div class=" col-12" style="background-color:#d1d2c0;text-align: center">EXTRRACURRICULAR</div>
+                                    </div>
+                                   </div>
+                        
+                                        <!-- Faux Folders
+                                        <-- Remove this if you'd like to make your own buttons instead!
+                                        ------------------------------------------------------------------- -->
+                                        <div style="display:none;" id="filter-buttons">
+                                            <hr class="mb-3">
+                                            <div class="row no-gutters mx-n1"></div>
+                                        </div>
+                        
+                        
+                                        <!-- Search Bar -->
+                                        <div style="display:none;" id="charadex-filters">
+                                            <hr class="w-100 mb-4">
+                                            <div class="row no-gutters m-n1">
+                                                <div class="col p-1">
+                                                    <input class="form-control bg-faded search" type="search" placeholder="Search" id="search">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Pagination -->
+                                        <div style="display: none;" id="charadex-pagination">
+                                            <hr class="mb-4 mt-4">
+                                            <div class="nav d-flex justify-content-center mb-n4">
+                                                <div class="btn-prev page-item"><a class="page-link"><i class="fa fa-chevron-left"></i></a></div>
+                                                <ul class="pagination pagination-top justify-content-center m-0"></ul>
+                                                <div class="btn-next page-item"><a class="page-link"><i class="fa fa-chevron-right"></i></a></div>
+                                            </div>
+                                        </div>
+                        
+                                    </div>
+                        
+                           
 
 
-        <!-- Gallery Container
-        ------------------------------------------------------------------- -->
-        <div id="charadex-gallery">
-
-
-            <!-- Filters
-            ----------------------------------------------------------------- -->
-            <div class="card p-md-5 p-4 mb-4">
-
-                <h3 class="mb-0"><a href="faq.html">FAQ</a></h3>
-
-                <!-- Faux Folders
-                <-- Remove this if you'd like to make your own buttons instead!
-                ------------------------------------------------------------------- -->
-                <div style="display:none;" id="filter-buttons">
-                    <hr class="mb-3">
-                    <div class="row no-gutters mx-n1"></div>
-                </div>
-
-
-                <!-- Search Bar -->
-                <div style="display:none;" id="charadex-filters">
-                    <hr class="w-100 mb-4">
-                    <div class="row no-gutters m-n1">
-                        <div class="col p-1">
-                            <input class="form-control bg-faded search" type="search" placeholder="Search" id="search">
-                        </div>
+                              
+                        
+                                    <!-- Repeated Items Render Here
+                                    ----------------------------------------------------------------- -->
+                                    <ul class="row no-gutters list list-unstyled m-n2"></ul>
+                        
+                                </div>
+                        
+                            </div>
+                           </div>
+                           <div class="">
+                            
+                           </div>
                     </div>
-                </div>
+                    
+                 </div>
 
-                <!-- Pagination -->
-                <div style="display: none;" id="charadex-pagination">
-                    <hr class="mb-4 mt-4">
-                    <div class="nav d-flex justify-content-center mb-n4">
-                        <div class="btn-prev page-item"><a class="page-link"><i class="fa fa-chevron-left"></i></a></div>
-                        <ul class="pagination pagination-top justify-content-center m-0"></ul>
-                        <div class="btn-next page-item"><a class="page-link"><i class="fa fa-chevron-right"></i></a></div>
-                    </div>
-                </div>
 
+
+
+
+
+
+                                
+                    
             </div>
 
+            
+               <div class="annoyingshrinkysquares">
+                <div class="px-lg-5 mt-lg-n5 load-html " id="squares" data-source="includes/squares.html" style="z-index:-1"> 
+               </div>
+           </div> 
+        <div class="row no-gutters m-n2">
 
-            <!-- Repeated Items Render Here
-            ----------------------------------------------------------------- -->
-            <ul class="row no-gutters list list-unstyled m-n2"></ul>
+            <!-- Main Content
+            --------------------------------------------------------------------- -->
+       
+             
+</div>
+        
+   
+     
+            
+
+      
+
+
+ 
+          
+     
+       
+            <!-- Designs
+            --------------------------------------------------------------------- -->
+          
+
+
 
         </div>
-
     </div>
-
+   
 
     <!-- --------------------------------------------------------------------
     <-- Footer
@@ -139,36 +225,39 @@
         <!-- Gallery Items
         ------------------------------------------------------------------- -->
         <li class="col-12 p-2" id="charadex-entries">
-            <div class="card d-block p-4">
-                <a class="d-block cardlink" href="">
-                    <b><span class="question"></span></b>
-                </a>
-                <div class="px-4 pt-2 text-pre answer"></div>
-                <hr>
-                <div class="row no-gutters small px-2 mb-n2">
-                    <div class="col-auto"><b>Tags</b></div>
-                    <div class="col text-right tags"></div>
+            <div class="row no-gutters">
+          
+         
+                <div class="bginfo col-1"></div>
+
+               
+              <div class=" cvcard card col-11">
+                <div class="">
+                    <div class="row no-gutters">
+                        <div class="col-8">
+                            <div class="d-block p-4 col-12">
+                                <b><span class="question"></span></b>
+                                <div class="px-4 pt-2 text-pre answer"></div>
+                                <hr>
+                                <div class="row no-gutters small px-2 mb-n2">
+                                    <div class="col-auto"><b>ew</b></div>
+                                    <div class="col text-right tags"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+    <img class="image" src="" style="max-height:200px;max-width:200px">
+                        </div>
+                     </div>
                 </div>
+              </div>
+              
+          
             </div>
-        </li>
+          </li>
 
 
-        <!-- Singular Item
-        ------------------------------------------------------------------- -->
-        <li class="col-12 p-2" id="charadex-card">
-            <div class="card d-block p-4">
-                <b><span class="question"></span></b>
-                <div class="px-4 pt-2 text-pre answer"></div>
-                <hr>
-                <div class="row no-gutters small px-2 mb-n2">
-                    <div class="col-auto"><b>Tags</b></div>
-                    <div class="col text-right tags"></div>
-                </div>
-            </div>
-        </li>
 
-
-    </div>
 
     <!-- ----------------------------------------------------------------- -->
     <!-- JS                                                                -->

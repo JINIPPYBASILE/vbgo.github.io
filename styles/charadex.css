@@ -532,6 +532,8 @@ h4, h5, h6 {
   border-bottom-left-radius:0px;border-bottom-right-radius:0px
 }
 
+
+
 hr {
   border-top-color: var(--cd-hr-border-color) !important;
   border-top-width: var(--cd-hr-border-width) !important;
@@ -827,6 +829,19 @@ animation-duration: 3s;
 
   text-align:center;
   
+}
+
+.cvcard {
+  background-color:rgba(235,235,235,0);
+  font-weight: 300;
+  border:0px solid #000;
+  transition:all 0.25s ease;
+}
+
+.cvcard:hover {
+  background-color:#ebf2f3 !important;
+  font-weight: 900;
+  border:2px solid #475d69 !important;
 }
 
 @keyframes changingshapes{

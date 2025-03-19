@@ -20,6 +20,8 @@ let sheetPages = {
     faq: "faq",
     staff: "mods",
     todo: "todo",
+    extracurricular: "extracurricular",
+    work: "work"
 
 }
 
@@ -151,11 +153,15 @@ let options = {
     faq: {
     
         sheetPage: sheetPages.faq,
+
+        
     
         itemAmount: 24,
         itemOrder: "asc",
     
         searchFilterParams: ['Tags'],
+
+        
     
     },
 
