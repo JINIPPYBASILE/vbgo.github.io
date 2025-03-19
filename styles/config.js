@@ -118,7 +118,7 @@ let options = {
         itemAmount: 24,
         itemOrder: "desc",
 
-        searchFilterParams: ['Title'],
+        searchFilterParams: ['Start Date'],
     
     },
 
@@ -159,7 +159,7 @@ let options = {
         itemAmount: 24,
         itemOrder: "asc",
     
-        searchFilterParams: ['Tags'],
+        searchFilterParams: ['Question'],
 
         
     

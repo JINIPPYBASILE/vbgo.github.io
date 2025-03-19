@@ -55,6 +55,7 @@
     <!-- --------------------------------------------------------------------
     <-- Header
     <-------------------------------------------------------------------- -->
+    <div class="load-html" id="banner" data-source="includes/banner.html"></div>
     
     <div class="load-html" id="header" data-source="includes/header.html"></div>
 
@@ -66,7 +67,7 @@
     <!-- --------------------------------------------------------------------
     <-- Masterlist
     <-------------------------------------------------------------------- -->
-    <div class="container softload masterlist-container" id="main-container">
+    <div class="container softload masterlist-container py-md-5 my-4 py-4 " id="main-container">
 
 
         <!-- Gallery Container
@@ -76,32 +77,107 @@
 
             <!-- Filters
             ----------------------------------------------------------------- -->
-            <div class="card p-md-5 p-4 mb-4">
+      <div class="annoyingahhwrapper">
+   
 
-                <h3 class="mb-0"><a href="prompts.html">Prompt Archive</a></h3>
-
-                <!-- Search Bar -->
-                <div style="display:none;" id="charadex-filters">
-                    <hr class="w-100 mb-4">
-                    <div class="row no-gutters m-n1">
-                        <div class="col-md col-9 p-1">
-                            <input class="form-control bg-faded search" type="search" placeholder="Search" id="search">
-                        </div>
-                    </div>
+            <div class=" webcard-holder mb-3 col-12 p-0">
+                <div class="col-lg-6 col-6">
+                    <div class="webtab col-12 pt-1 pl-3" >moreabout.html  <a class="fa-regular fa-x ml-2" > </a>
+                      </div>
+                  
                 </div>
-
-                <!-- Pagination -->
-                <div style="display: none;" id="charadex-pagination">
-                    <hr class="mb-4 mt-4">
-                    <div class="nav d-flex justify-content-center mb-n4">
-                        <div class="btn-prev page-item"><a class="page-link"><i class="fa fa-chevron-left"></i></a></div>
-                        <ul class="pagination pagination-top justify-content-center m-0"></ul>
-                        <div class="btn-next page-item"><a class="page-link"><i class="fa fa-chevron-right"></i></a></div>
+        
+                <div class="webheader p-2 rounded-0"> 
+                 <div class="row no-gutters">
+            
+                    <div class="searchbar col-lg-12 col-md-">
+                       <p class="website-name ml-3 "> <i class="fa-solid fa-gun"></i> | https://vbgo.github.io/moreabout.html </p>
                     </div>
+                 
+                 </div>
                 </div>
-
+                <div class=" webcard card p-4 rounded-0">
+                          
+<a class="btn btn-primary col-12 mb-4" href="prompts.html">
+    BACK TO ALL BLOG ENTRIES
+</a>
+            <!-- Faux Folders
+            <-- Remove this if you'd like to make your own buttons instead!
+            ------------------------------------------------------------------- -->
+            <div style="display:none;" id="filter-buttons">
+                <hr class="mb-3">
+                <div class="row no-gutters mx-n1"></div>
             </div>
 
+
+            <!-- Search Bar -->
+            <div style="display:none;" id="charadex-filters">
+                
+                <h3 class="mb-0">Verne's Blog</h3>
+                <div class="row no-gutters">
+                    <div class="col-lg-8 col-md-8 col-12">
+                        <p class="mt-3">I realized that I had a lot of thoughts, and even though I have wonderful people in my life 
+                            to share them with, I feel that a lot of them could be expressed in a more <i>digital(?)</i> format, as well as wanting
+                            to articulate certain things better. So I made a blog function where I can share my thoughts!! Most of these will probably be 
+                            movie reviews (I wonder why I don't use Letterboxd intstead), random ramblings, and occasionally a decently-written essay. I'll probably also rant a 
+                            lot about school here, because it's a pivotal part of my life so why not do it! Enjoy and happy reading!
+                        </p>
+                   <p>You can sort through the entries via the following using the search bar: <b>Date written</b></p>
+            
+               </div>
+               <div class="col-lg-4 col-7 col-md-4">
+                <img class="col-12" src="https://i.postimg.cc/vZB9x8Lt/IMG-9932.png" style="transform:scale(1.75);margin-top:-0px;margin-left:30px;filter: hue-rotate(20deg)  drop-shadow(2px 0px 0px #fff)  drop-shadow(-2px 0px#fff)   drop-shadow(0px 2px#fff)  drop-shadow(0px -2px 0px#fff)   drop-shadow(0px 5px 0px#000000);animation-name:itsmegrow;animation-iteration-count: infinite;animation-duration: 3s;">
+            </div>
+                
+              
+            </div>
+            <!-- Pagination -->
+            <div style="display: none;" id="charadex-pagination">
+                <hr class="mb-4 mt-4">
+                <div class="nav d-flex justify-content-center mb-n4">
+                    <div class="btn-prev page-item"><a class="page-link"><i class="fa fa-chevron-left"></i></a></div>
+                    <ul class="pagination pagination-top justify-content-center m-0"></ul>
+                    <div class="btn-next page-item"><a class="page-link"><i class="fa fa-chevron-right"></i></a></div>
+                </div>
+            </div>
+            <hr class="w-100 mb-4">
+            <div class="row no-gutters m-n1">
+                <div class="col-12 p-1">
+                    <input class="form-control bg-faded search" type="search" placeholder="Search" id="search">
+                </div>
+            </div>
+                        </div>
+                  
+                      </div>
+                  </div>
+
+                  
+                  <div class="col-lg-5 col-5">
+                    <div class="d-none">
+                        <div class="col-md-12 p-2 gallery-item" id="todo-item">
+                            <div class="row no-gutters m-n1">
+                               
+                                <div class="col-12">
+                                    <a class="d-block mt-2 link text-truncate badge badge-primary" href=""><b class="todo" style="font-size:15px"></b> - </a>
+                                    <span class=" information" style="font-size:15px"></span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+                </div>
+  
+   
+
+     
+
+        <div class="annoyingshrinkysquares">
+            <div class="px-lg-5 mt-lg-n5 load-html " id="squares" data-source="includes/squares.html" style="z-index:-1"> 
+           </div>
+      </div>
+ 
 
             <!-- Repeated Items Render Here
             ----------------------------------------------------------------- -->
@@ -115,7 +191,7 @@
     <!-- --------------------------------------------------------------------
     <-- Footer
     <-------------------------------------------------------------------- -->
-    
+</div>
     <div class="load-html" id="footer" data-source="includes/footer.html"></div>
 
 
@@ -129,55 +205,132 @@
 
         <!-- Gallery Items
         ------------------------------------------------------------------- -->
-        <li class="col-md-6 p-2" id="charadex-entries">
-            <a class="card h-100 cardlink" href="">
-                <h5 class="card-header text-center title"></h5>
+
+
+   
+                                 
+      <div class="shrinkycoolcardonhover col-lg-4 col-md-6 col-12 p-1"  id="charadex-entries">
+      
+        <li class="col-md-12 p-2 idunnowhattocallthisleft p-3">
+            <div class="webcard-holder">
+            <div class="col-lg-9 col-9">
+                <div class="webtab col-12 pt-1 pl-3" >blogentry.html  <a class="fa-regular fa-x ml-2" > </a>
+                  </div>
+              
+            </div>
+            <div class="webheader p-2 rounded-0"> 
+                <div class="row no-gutters">
+           
+                   <div class="searchbar col-lg-12 col-md-">
+                      <p class="website-name ml-3 "> <i class="fa-solid fa-gun"></i> | /blogentry.html </p>
+                   </div>
+                
+                </div>
+               </div>
+               <div class=" webcard card p-4 rounded-0">
+     
+            <a class="card changingshapes3 h-100 cardlink p-3" href="">
+
+                <h5 class=" text-center title"></h5>
+    <div class="shortscription mx-3"></div>
                 <div class="card-body p-0 d-flex flex-fill">
                     <img class="image img-fluid m-auto" src="" oncontextmenu="return false">
                 </div>
             </a>
+            
+        </div>
+        </div>
         </li>
+      </div>
+
+
+
+  
+ 
+
+
+
+
+
+
+
+
+      
+
 
 
         <!-- Singular Item
         ------------------------------------------------------------------- -->
-        <li class="col-12 p-2" id="charadex-card">
 
-            <!-- Actual Card -->
-            <div class="card">
 
-                <!-- Header -->
-                <h2 class="card-header text-center p-4 title"></h2>
 
-                <!--Main Info -->
-                <div class="p-md-5 p-4">
 
-                    <!-- Image -->
-                    <div class="text-center" oncontextmenu="return false">
-                        <img class="image img-fluid rounded" src="">
-                    </div>
-                    <hr>
+                                         
+      <div class="shrinkycoolcardonhover col-12 p-1"  id="charadex-card">
+      
+        <li class="col-md-12 p-2 idunnowhattocallthisleft p-3">
+            <div class="webcard-holder">
+            <div class="col-lg-9 col-9">
+                <div class="webtab col-12 pt-1 pl-3" >blogentry.html  <a class="fa-regular fa-x ml-2" > </a>
+                  </div>
+              
+            </div>
+            <div class="webheader p-2 rounded-0"> 
+                <div class="row no-gutters">
+           
+                   <div class="searchbar col-lg-12 col-md-">
+                      <p class="website-name ml-3 "> <i class="fa-solid fa-gun"></i> | /blogentry.html </p>
+                   </div>
+                
+                </div>
+               </div>
+               <div class=" webcard card p-4 rounded-0">
+     
+                <div class="card p-2">
 
-                    <!-- Description -->
-                    <div class="px-4 py-2 text-pre description"></div>
-                    <hr>
+                    <!-- Header -->
+                    <h2 class=" text-center p-4 title"></h2>
 
-                    <!-- Description -->
-                    <div class="row no-gutters">
-                        <div class="col-md-6 px-4 d-flex justify-content-between">
-                            <b>Starts</b> <span class="startdate"></span>
-                        </div>
-                        <div class="col-md-6 px-4 d-flex justify-content-between">
-                            <b>Ends</b> <span class="enddate"></span>
-                        </div>
-                    </div>
-                    <hr>
-
-                    <a class="btn btn-primary d-block link" target="_blank" href="">Submissions</a>
-
+        <div class="alert alert-info mb-2">     
+            <div class="row no-gutters">
+                <div class="col-md-6 px-4 d-flex justify-content-between">
+                    <p>   By <b> Verne Go</b></p>
+                </div>
+                <div class="col-md-6 px-4 d-flex justify-content-between">
+                    <b>Written on:</b> <span class="startdate"></span>
                 </div>
             </div>
+    
+        </div>
+                   
+    
+                    <!--Main Info -->
+                    <div class=" p-2">
+    
+                        <!-- Image -->
+                        <div class="text-center" oncontextmenu="return false">
+                            <img class="image img-fluid rounded" src="">
+                        </div>
+                        <hr>
+    
+                        <!-- Description -->
+                        <div class="px-4 py-2 text-pre description"></div>
+          
+    
+                        <!-- Description -->
+                    
+                        <hr>
+    
+    
+                    </div>
+                </div>
+            
+        </div>
+        </div>
         </li>
+      </div>
+
+
 
         
     </div>
