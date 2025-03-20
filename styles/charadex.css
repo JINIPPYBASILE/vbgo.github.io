@@ -775,6 +775,10 @@ animation-duration: 3s;
  
 }
 
+.projecttitle {
+  background-color:#b5c7cb !important
+}
+
 @media (max-width:992px) {
   .bobbingcubemobile {
     display:none
