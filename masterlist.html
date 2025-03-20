@@ -52,254 +52,489 @@
 <body>
 
 
-    <!-- --------------------------------------------------------------------
-    <-- Header
-    <-------------------------------------------------------------------- -->
-    <div class="load-html" id="banner" data-source="includes/banner.html"></div>
-    <div class="load-html" id="header" data-source="includes/header.html"></div>
-
-
-    <!-- Spinner for loading-->
-    <div class="spinner-border m-auto" id="loading"></div>
-
-
-    <!-- --------------------------------------------------------------------
-    <-- Masterlist
-    <-------------------------------------------------------------------- -->
-    <div class="container softload masterlist-container" id="main-container">
-
-
-        <!-- Gallery Container
-        ------------------------------------------------------------------- -->
-        <div id="charadex-gallery">
-
-
-            <!-- Filters
-            ----------------------------------------------------------------- -->
-            <div class="card p-md-5 p-4 mb-4">
-
-                <h3 class="mb-0"><a href="masterlist.html">Species Masterlist</a></h3>
-
-                <!-- Faux Folders
-                <-- Remove this if you'd like to make your own buttons instead!
-                ------------------------------------------------------------------- -->
-                <div style="display:none;" id="filter-buttons">
-                    <hr class="mb-3">
-                    <div class="row no-gutters mx-n1"></div>
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+        <!-- ----------------------------------------------------------------- -->
+        <!-- About Your Site                                                   -->
+        <!-- ----------------------------------------------------------------- -->
+        <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+        <title>Charadex</title>
+        <meta property="title" content="Charadex" />
+        <meta property="type" content="website" />
+        <meta property="url" content="https://www.charadex.com/" />
+        <meta property="image" content="assets/meta.png" />
+        <meta name="description" content="A tool for organizing small ARPGs and species.">
+    
+        <!-- No AI scraping directives -->
+        <meta name="robots" content="noai">
+        <meta name="robots" content="noimageai">
+    
+    
+        <!-- ----------------------------------------------------------------- -->
+        <!-- Styles                                                            -->
+        <!-- ----------------------------------------------------------------- -->
+    
+        <!-- Bootstrap CSS -->
+        <!-- Using Bootstrap 4.5 because its closest to Toyhou.se's current version -->
+        <!-- https://getbootstrap.com/docs/4.5/getting-started/introduction/ -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+        <!-- ----------------------------------------------------------------- -->
+        <!-- Optional Styles                                                   -->
+        <!-- ----------------------------------------------------------------- -->
+    
+        <!-- Custom CSS -->
+        <link rel="stylesheet" type="text/css" href="styles/charadex.css">
+    
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400|Comfortaa:500" rel="stylesheet">
+    
+    
+    </head>
+    
+    <body>
+    
+    
+        <!-- --------------------------------------------------------------------
+        <-- Header
+        <-------------------------------------------------------------------- -->
+        <div class="load-html" id="banner" data-source="includes/banner.html"></div>
+        
+        <div class="load-html" id="header" data-source="includes/header.html"></div>
+    
+    
+        <!-- Spinner for loading-->
+        <div class="spinner-border m-auto" id="loading"></div>
+    
+    
+        <!-- --------------------------------------------------------------------
+        <-- Masterlist
+        <-------------------------------------------------------------------- -->
+        <div class="container softload masterlist-container py-md-5 my-4 py-4 " id="main-container">
+    
+              
+            <img class="col-12 bobbingcubemobile ml-lg-n5 mr-lg-5" src="https://media0.giphy.com/media/67sbrfNMsjwmTYwygV/giphy.gif?cid=6c09b952h2xiyl1oyaosim5j8k3rsz1ulobn4nsneuat6n20&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=s" style="position:absolute;top:0;left:-375px;transform:scale(1);z-index:0;filter: hue-rotate(20deg) grayscale(80%) drop-shadow(5px 0px 0px #fafdff)  drop-shadow(-5px 0px#fafdff)   drop-shadow(0px 5px#fafdff)  drop-shadow(0px -5px 0px#fafdff)">
+    
+    
+    
+    
+    
+            <img class="col-8 bobbingcubemobile " src="https://media0.giphy.com/media/67sbrfNMsjwmTYwygV/giphy.gif?cid=6c09b952h2xiyl1oyaosim5j8k3rsz1ulobn4nsneuat6n20&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=s" style="position:absolute;top:400px;right:-455px;transform:scale(1);z-index:0;filter: hue-rotate(20deg) grayscale(80%) drop-shadow(5px 0px 0px #fafdff)  drop-shadow(-5px 0px#fafdff)   drop-shadow(0px 5px#fafdff)  drop-shadow(0px -5px 0px#fafdff)">
+            
+            <!-- Gallery Container
+            ------------------------------------------------------------------- -->
+            <div id="charadex-gallery">
+    
+    
+                <!-- Filters
+                ----------------------------------------------------------------- -->
+          <div class="annoyingahhwrapper">
+       <div class="shrinkycoolcardonhover ">
+        
+        <div class=" webcard-holder mb-3 col-12 p-0" style="z-index:1">
+            <div class="col-lg-6 col-6">
+                <div class="webtab col-12 pt-1 pl-3" >blog.html  <a class="fa-regular fa-x ml-2" > </a>
+                  </div>
+              
+            </div>
+    
+            <div class="webheader p-2 rounded-0"> 
+             <div class="row no-gutters">
+        
+                <div class="searchbar col-lg-12 col-md-">
+                   <p class="website-name ml-3 "> <i class="fa-solid fa-gun"></i> | https://vbgo.github.io/blog.html </p>
                 </div>
+             
+             </div>
+            </div>
+            <div class=" webcard card p-4 rounded-0">
+                      
+    <a class="btn btn-primary col-12 mb-4" href="masterlist.html">
+    BACK TO ALL PROJECTS
+    </a>
+       
+        <div class=" p-3">
 
-                <!-- Filters -->
-                <div style="display:none;" id="charadex-filters">
-                    <hr class="w-100 mb-4">
-                    <div class="row no-gutters m-n1">
+            <h3 class="mb-0" style="text-align:right"><a href="masterlist.html" >Species Masterlist</a></h3>
 
-                        <!-- Custom Filter -->
-                        <div class="col-md-3 col-12 p-1" style="display: none;">
-                            <select class="form-control bg-faded" id="filter"></select>
-                        </div>
+            
 
-                        <!-- Search Filter -->
-                        <div class="col-md-3 col-3 p-1" style="display: none;">
-                            <select class="form-control bg-faded" id="search-filter"></select>
-                        </div>
+            <!-- Faux Folders
+            <-- Remove this if you'd like to make your own buttons instead!
+            ------------------------------------------------------------------- -->
 
-                        <!-- Search Bar -->
-                        <div class="col-md col-9 p-1">
-                            <input class="form-control bg-faded search" type="search" placeholder="Search" id="search">
-                        </div>
+     
+            <div style="display:none;" id="filter-buttons">
 
-                    </div>
-                </div>
-
-                <!-- Pagination -->
-                <div style="display: none;" id="charadex-pagination">
-                    <hr class="mb-4 mt-4">
-                    <div class="nav d-flex justify-content-center mb-n4">
-                        <div class="btn-prev page-item"><a class="page-link"><i class="fa fa-chevron-left"></i></a></div>
-                        <ul class="pagination pagination-top justify-content-center m-0"></ul>
-                        <div class="btn-next page-item"><a class="page-link"><i class="fa fa-chevron-right"></i></a></div>
-                    </div>
-                </div>
-
-                <!-- Prev & Next Topbar -->
-                <div style="display: none;" id="prevNext">
-                    <hr class="mb-4">
-                    <div class="row no-gutters px-2 mb-n3 font-weight-bold text-uppercase">
-                        <div class="col-6 px-1"><a id="entryPrev" href=""><i class="fa fa-chevron-left mr-2"></i><span></span></a></div>
-                        <div class="col-6 px-1 text-right order-md-1"><a id="entryNext" href=""><span></span><i class="fa fa-chevron-right ml-2"></i></a></div>
-                    </div>
-                </div>
-
+                
+                
+                <hr class="mb-3">
+                <div class="row no-gutters mx-n1"></div>
             </div>
 
+            <!-- Filters -->
+            <div style="display:none;" id="charadex-filters">
+             
+                <hr class="w-100 mb-4">
+                <div class="row no-gutters m-n1">
 
-            <!-- Repeated Items Render Here
-            ----------------------------------------------------------------- -->
-            <ul class="row no-gutters list list-unstyled m-n2"></ul>
+                    <!-- Custom Filter -->
+                    <div class="col-md-3 col-12 p-1" style="display: none;">
+                        <select class="form-control bg-faded" id="filter"></select>
+                    </div>
 
-        </div>
-
-    </div>
-
-
-
-    <!-- --------------------------------------------------------------------
-    <-- Footer
-    <-------------------------------------------------------------------- -->
-    <div class="load-html" id="footer" data-source="includes/footer.html"></div>
+                    <div class="col-12">
 
 
+                    
+                
+                        <div class="row no-gutters">
+                            <div class="col-lg-4 col-7 col-md-4">
+                                <img class="col-12" src="https://i.postimg.cc/t4WPVG9X/IMG-9933.png " style="transform:scale(1.75);margin-top:-0px;margin-left:-90px;filter: hue-rotate(20deg)  drop-shadow(2px 0px 0px #fff)  drop-shadow(-2px 0px#fff)   drop-shadow(0px 2px#fff)  drop-shadow(0px -2px 0px#fff)   drop-shadow(0px 5px 0px#000000);animation-name:itsmegrow;animation-iteration-count: infinite;animation-duration: 3s;">
+                            </div>
+            
+                            <div class="col-lg-8 col-md-8 col-12">
+                                <p class="mt-3">I realized that I had a lot of thoughts, and even though I have wonderful people in my life 
+                                    to share them with, I feel that a lot of them could be expressed in a more <i>digital(?)</i> format, as well as wanting
+                                    to articulate certain things better. So I made a blog function where I can share my thoughts!! Most of these will probably be 
+                                    movie reviews (I wonder why I don't use Letterboxd intstead), random ramblings, and occasionally a decently-written essay. I'll probably also rant a 
+                                    lot about school here, because it's a pivotal part of my life so why not do it! Enjoy and happy reading!
+                                </p>
+                           <p>You can sort through the entries via the following using the search bar: <b>Year written</b></p>
+                    
+                       </div>
+                      
+    
+    
+    
+                    </div>  </div>
 
-    <!-- --------------------------------------------------------------------
-    <-- Repeat Items
-    <-- Do not remove 'display:none;'
-    <-- Edit these to your liking
-    <-------------------------------------------------------------------- -->
-    <div style="display:none;">
+
+                    <!-- Search Filter -->
+                    <div class="col-md-3 col-3 p-1" style="display: none;">
+                        <select class="form-control bg-faded" id="search-filter"></select>
+                    </div>
 
 
-        <!-- Faux Folder Buttons
-        ------------------------------------------------------------------- -->
-        <div class="col-lg-3 col-md-4 col-sm-6 p-1" id="charadex-filter-buttons">
-            <a class="btn btn-primary d-block" href=""></a>
-        </div>
+                    
+                    <!-- Search Bar -->
+                    <div class="col-md col-9 p-1">
+                        <input class="form-control bg-faded search" type="search" placeholder="Search" id="search">
+                    </div>
 
-
-        <!-- Gallery Items
-        ------------------------------------------------------------------- -->
-        <li class="col-lg-3 col-sm-6 p-2" id="charadex-entries">
-            <a class="card h-100 cardlink" href="">
-                <h5 class="card-header text-center design"></h5>
-                <div class="card-body d-flex flex-fill">
-                    <img class="image img-fluid m-auto" src="" oncontextmenu="return false">
                 </div>
-            </a>
-        </li>
+            </div>
 
+            <!-- Pagination -->
+            <div style="display: none;" id="charadex-pagination">
+                <hr class="mb-4 mt-4">
+                <div class="nav d-flex justify-content-center mb-n4">
+                    <div class="btn-prev page-item"><a class="page-link"><i class="fa fa-chevron-left"></i></a></div>
+                    <ul class="pagination pagination-top justify-content-center m-0"></ul>
+                    <div class="btn-next page-item"><a class="page-link"><i class="fa fa-chevron-right"></i></a></div>
+                </div>
+            </div>
+
+            <!-- Prev & Next Topbar -->
+            <div style="display: none;" id="prevNext">
+                <hr class="mb-4">
+                <div class="row no-gutters px-2 mb-n3 font-weight-bold text-uppercase">
+                    <div class="col-6 px-1"><a id="entryPrev" href=""><i class="fa fa-chevron-left mr-2"></i><span></span></a></div>
+                    <div class="col-6 px-1 text-right order-md-1"><a id="entryNext" href=""><span></span><i class="fa fa-chevron-right ml-2"></i></a></div>
+                </div>
+            </div>
+
+        </div>
+    
+
+     
+     
+                    </div>
+              
+                  </div>
+              </div>
+    
+    
+    
+   
+    
+                
+    
+    
+            <div class="annoyingshrinkysquares">
+                <div class="px-lg-5 mt-lg-n5 load-html " id="squares" data-source="includes/squares.html" style="z-index:-1"> 
+               </div>
+          
+                    </div>
+      
+       
+     
+    
+                <!-- Repeated Items Render Here
+                ----------------------------------------------------------------- -->
+                <ul class="row no-gutters list list-unstyled m-n2"></ul>
+    
+            </div>
+    
+        </div>
+    
+    
+        <!-- --------------------------------------------------------------------
+        <-- Footer
+        <-------------------------------------------------------------------- -->
+    </div>
+        <div class="load-html" id="footer" data-source="includes/footer.html"></div>
+    
+    
+        <!-- --------------------------------------------------------------------
+        <-- Repeat Items
+        <-- Do not remove 'display:none;'
+        <-- Edit these to your liking
+        <-------------------------------------------------------------------- -->
+        <div style="display:none;">
+    
+    
+            <!-- Gallery Items
+            ------------------------------------------------------------------- -->
+    
+    
+       
+                                     
+       
+            <div class="idunnowhattocallthisleft col-12"  id="charadex-entries">
+          
+                <li class="col-md-12 p-2  p-3">
+                    <div class="webcard-holder">
+                    <div class="col-lg-9 col-9">
+                        <div class="webtab col-12 pt-1 pl-3" >project<span class="id"></span>.html  <a class="fa-regular fa-x ml-2" > </a>
+                          </div>
+                      
+                    </div>
+                    <div class="webheader p-2 rounded-0"> 
+                        <div class="row no-gutters">
+                   
+                           <div class="searchbar col-lg-12 col-md-">
+                              <p class="website-name ml-3 "> <i class="fa-solid fa-gun"></i> /project<span class="id"></span>.html</p>
+                           </div>
+                        
+                        </div>
+                       </div>
+                       <div class=" webcard card p-4 rounded-0">
+                        <div class="background" style="height:50px;opacity:0.75;filter:sepia(0.3) blur(5px);"></div>
+                <div class="row no-gutters">
+                    <div class="col-6">
+                        <a class="card changingshapes3 h-100 cardlink p-3" href="" style="z-index:2">
+        
+                            <h5 class=" text-center"><span class="design"></span> -<b> <span class="projectname"></span></b></h5>
+              
+                            <div class="card-body p-0 d-flex flex-fill">
+                                <img class="image img-fluid m-auto" src="" oncontextmenu="return false">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 my-5 " style="z-index:1">
+                        <div class="card notes p-3 ml-n4 pl-5 mr-4"></div>
+                    
+                    </div>
+                </div>
+                    
+                </div>
+                </div>
+                </li>
+              </div>
+        
+        
+    
+      
+     
+    
+    
+    
+    
+    
+    
+    
+    
+          
+    
+    
+    
+          
 
         <!-- Singular Item
         ------------------------------------------------------------------- -->
-        <li class="col-12 p-2" id="charadex-card">
 
-            <!-- Actual Card -->
-            <div class="card">
+    
+       
+                                     
+       
+        <div class="idunnowhattocallthisleft col-12"  id="charadex-card">
+          
+            <li class="col-md-12 p-2  p-3">
+                <div class="webcard-holder">
+                <div class="col-lg-9 col-9">
+                    <div class="webtab col-12 pt-1 pl-3" >project<span class="id"></span>.html  <a class="fa-regular fa-x ml-2" > </a>
+                      </div>
 
-                <!-- Header -->
-                <h2 class="card-header text-center p-4">
-                    <a class="cardlink design"></a> (<a class="cardlinkalt" href="">#<span class="id"></span></a>)
-                </h2>
-
-
-                <!--Main Info -->
-                <div class="px-md-5 pt-md-5 p-4">
-                    
-                    <!-- Character Info -->
+                   
+                  
+                </div>
+                <div class="webheader p-2 rounded-0"> 
                     <div class="row no-gutters">
-
-
-                        <!-- Image -->
-                        <div class="col-md-5 p-3">
-                            <div class="mx-auto w-100 text-center" oncontextmenu="return false">
-                                <img class="image img-fluid" src="">
-                            </div>
-                        </div>
-
-
-                        <!-- Information List -->
-                        <div class="col-md-7 p-3">
-
-                            <!-- Item -->
-                            <div class="d-flex justify-content-between mb-2">
-                                <b class="text-muted">Owner</b>
-                                <span class="owner"></span>
-                            </div>
-
-                            <!-- Item -->
-                            <div class="d-flex justify-content-between mb-2">
-                                <b class="text-muted">Artist</b>
-                                <span class="artist"></span>
-                            </div>
-
-                            <!-- Item -->
-                            <div class="d-flex justify-content-between mb-2">
-                                <b class="text-muted">Designer</b>
-                                <span class="designer"></span>
-                            </div>
-
-                            <hr>
-
-                            <!-- Item -->
-                            <div class="d-flex justify-content-between mb-2">
-                                <b class="text-muted">Species</b>
-                                <span class="species"></span>
-                            </div>
-
-                            <!-- Item -->
-                            <div class="d-flex justify-content-between mb-2">
-                                <b class="text-muted">Rarity</b>
-                                <span class="rarity"></span>
-                            </div>
-
-                            <!-- Item -->
-                            <div class="d-flex justify-content-between mb-2">
-                                <b class="text-muted">Design Type</b>
-                                <span class="designtype"></span>
-                            </div>
-
-                            <!-- Item -->
-                            <div class="d-flex justify-content-between mb-2">
-                                <b class="text-muted">Value</b>
-                                <span>$<span class="value"></span></span>
-                            </div>
-
-                            <!-- Item -->
-                            <div class="d-flex justify-content-between mb-2">
-                                <b class="text-muted">Status</b>
-                                <span class="status"></span>
-                            </div>
-
-                            <hr>
-
-                            <!-- Item -->
-                            <div class="">
-                                <b class="text-muted">Traits</b>
-                                <div class="pl-3 text-pre traits"></div>
-                            </div>
-
-                            <hr>
-
-                            <!-- Item -->
-                            <div class="">
-                                <b class="text-muted">Notes</b>
-                                <div class="pl-3 text-pre notes"></div>
-                            </div>
-
-                            <hr>
-
-                            <!-- Item -->
-                            <div class="">
-                                <b class="text-muted">Transaction Log</b>
-                                <div class="pl-3 pt-2 small" id="log-table">
-                                    <div class="d-none">
-                                        <div class="row no-gutters" id="log-entry">
-                                            <div class="col-md-3"><span class="timestamp"></span></div>
-                                            <div class="col-md-9"><span class="reason"></span></div>
+               
+                       <div class="searchbar col-lg-12 col-md-">
+                          <p class="website-name ml-3 "> <i class="fa-solid fa-gun"></i> | /blogentry.html </p>
+                       </div>
+                    
+                    </div>
+                   </div>
+                   <div class=" webcard card p-4 rounded-0">
+         
+                    <div class="card">
+                       
+                        <div class="background"></div>
+                                        <!-- Header -->
+                                        <div class="card-header projecttitle text-center p-4 mt-n3 rounded-0" style="z-index:4" >
+                                       <div class="row no-gutters">
+                                        <div class="col-4">
+                                            <img class="profileimage " src="">
+                                        </div>
+                                        <div class="col-8">
+                                           <div class="h3">
+                                            <a class="cardlink design" ></a> (<a class="cardlinkalt" href="">- <span class="projectname"></span></a>)
+                                           </div>
+                                        </div>
+                                       </div>
+                                    </div>
+                        
+                        
+                                        <!--Main Info -->
+                                        <div class="px-md-5 pt-md-5 p-4">
+                                            
+                                            <!-- Character Info -->
+                                            <div class="row no-gutters">
+                        
+                        
+                                                <!-- Image -->
+                                                <div class="col-md-5 p-3">
+                                                    <div class="mx-auto w-100 text-center" oncontextmenu="return false">
+                                                        <img class="image img-fluid" src="">
+                                                    </div>
+                                                </div>
+                        
+                        
+                                                <!-- Information List -->
+                                                <div class="col-md-7 p-3">
+                        
+                                                    <!-- Item -->
+                                                    <div class="d-flex justify-content-between mb-2">
+                                                        <b class="text-muted">Owner</b>
+                                                        <span class="owner"></span>
+                                                    </div>
+                        
+                                                    <!-- Item -->
+                                                    <div class="d-flex justify-content-between mb-2">
+                                                        <b class="text-muted">Artist</b>
+                                                        <span class="artist"></span>
+                                                    </div>
+                        
+                                                    <!-- Item -->
+                                                    <div class="d-flex justify-content-between mb-2">
+                                                        <b class="text-muted">Designer</b>
+                                                        <span class="designer"></span>
+                                                    </div>
+                        
+                                                    <hr>
+                        
+                                                    <!-- Item -->
+                                                    <div class="d-flex justify-content-between mb-2">
+                                                        <b class="text-muted">Species</b>
+                                                        <span class="species"></span>
+                                                    </div>
+                        
+                                                    <!-- Item -->
+                                                    <div class="d-flex justify-content-between mb-2">
+                                                        <b class="text-muted">Rarity</b>
+                                                        <span class="rarity"></span>
+                                                    </div>
+                        
+                                                    <!-- Item -->
+                                                    <div class="d-flex justify-content-between mb-2">
+                                                        <b class="text-muted">Design Type</b>
+                                                        <span class="designtype"></span>
+                                                    </div>
+                        
+                                                    <!-- Item -->
+                                                    <div class="d-flex justify-content-between mb-2">
+                                                        <b class="text-muted">Value</b>
+                                                        <span>$<span class="value"></span></span>
+                                                    </div>
+                        
+                                                    <!-- Item -->
+                                                    <div class="d-flex justify-content-between mb-2">
+                                                        <b class="text-muted">Status</b>
+                                                        <span class="status"></span>
+                                                    </div>
+                        
+                                                    <hr>
+                        
+                                                    <!-- Item -->
+                                                    <div class="">
+                                                        <b class="text-muted">Traits</b>
+                                                        <div class="pl-3 text-pre traits"></div>
+                                                    </div>
+                        
+                                                    <hr>
+                        
+                                                    <!-- Item -->
+                                                    <div class="">
+                                                        <b class="text-muted">Notes</b>
+                                                        <div class="pl-3 text-pre notes"></div>
+                                                    </div>
+                        
+                                                    <hr>
+                        
+                                                    <!-- Item -->
+                                                    <div class="">
+                                                        <b class="text-muted">Transaction Log</b>
+                                                        <div class="pl-3 pt-2 small" id="log-table">
+                                                            <div class="d-none">
+                                                                <div class="row no-gutters" id="log-entry">
+                                                                    <div class="col-md-3"><span class="timestamp"></span></div>
+                                                                    <div class="col-md-9"><span class="reason"></span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                        
+                                                    <!-- Add more list items above this line-->
+                                                </div>
+                                            </div>
+                        
+                                            <!-- Where to Update -->
+                                           <div class="htmlandmarkdown"></div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-
-                            <!-- Add more list items above this line-->
-                        </div>
-                    </div>
-
-                    <!-- Where to Update -->
-                    <div class="card bg-faded py-2 px-3 mt-3 small text-center">
-                        <b>If you need to update this entry, please do so <a href="">here</a>.</b>
-                    </div>
-                </div>
+                
             </div>
-        </li>
+            </div>
+            </li>
+          </div>
+    
+    
+
+  
 
 
     </div>
